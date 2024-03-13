@@ -24,11 +24,6 @@ class DisciplinaControlador {
         alunoElemento.textContent = `Nome: ${aluno.nome} - Idade: ${aluno.idade} - Matricula: ${aluno.matricula}`;
         elementoDestino.appendChild(alunoElemento);
     }
-    listarAlunosMenoresIdade() {
-        const listaAlunosMenoresElemento = document.querySelector('#listaAlunosMenores');
-        const alunosMenores = this.alunoService.listarMenoresIdade();
-        alunosMenores.forEach(menor => this.inserirAlunoNoHtml(menor, listaAlunosMenoresElemento));
-    }
 
     inserirDisciplina() {
         const nomeElemento = document.querySelector("#nomeDisciplina");

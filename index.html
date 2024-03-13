@@ -2,32 +2,46 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Acadêmico - IFPB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Acadêmico - IFPB</title>
 </head>
 
 <body>
 
-    Nome:<input id="nome"><br>
-    Idade:<input id="idade" type="number"><br>
-    Matrícula:<input id="matricula"><br>
+Nome:<input id="nomeAluno"><br>
+Idade:<input id="idade" type="number"><br>
+Matrícula:<input id="matricula"><br>
 
-    <button onclick="controlador.inserir()">Cadastrar</button>
-    <button onclick="controlador.listarAlunosMenoresIdade()">Mostrar Menores</button>
+<button onclick="controlador.inserir()">Cadastrar</button>
 
-    <ol id="listaAlunos">
+<ol id="listaAlunos">
 
-    </ol>
+</ol>
 
-    <ul id="listaAlunosMenores">
-    </ul>
 
-    <script src="modelo/aluno.js"></script>
-    <script src="repositorio/aluno_repositorio.js"></script>
-    <script src="servico/aluno_service.js"></script>
-    <script src="controlador/aluno_controlador.js"></script>
-    <script src="script.js"></script>
+Nome da Disciplina:<input id="nomeDisciplina"><br>
+Código:<input id="codigo" type="number"><br>
+
+<button onclick="controlador.inserirDisciplina()">Cadastrar</button>
+
+<ol id="listaDisciplinas">
+
+</ol>
+
+codigo da Disciplina:<input id="codigoDisciplina"><br>
+matricula do aluno:<input id="matriculaAluno" type="number"><br>
+
+<button onclick="controlador.inserirAlunoNaDisciplina()">Matricular</button>
+
+<script src="modelo/aluno.js"></script>
+<script src="repositorio/aluno_repositorio.js"></script>
+<script src="servico/aluno_service.js"></script>
+<script src="modelo/disciplina.js"></script>
+<script src="repositorio/disciplina_repositorio.js"></script>
+<script src="servico/disciplina_service.js"></script>
+<script src="controlador/disciplina_controlador.js"></script>
+<script src="scriptDisc.js"></script>
 
 </body>
 
